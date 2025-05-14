@@ -1,0 +1,24 @@
+/* Asegura que el contenido principal ocupe toda la altura disponible */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto; /* Empuja el footer al final */
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Estilos de los enlaces */
+footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

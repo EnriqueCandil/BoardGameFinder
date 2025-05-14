@@ -1,0 +1,23 @@
+body {
+    background-color: #f7f9fc;
+}
+
+#filtersContainer {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.table thead {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f2f6fc;
+}

@@ -1,0 +1,28 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.card {
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.list-group-item {
+    font-size: 1.1rem;
+    padding: 1.25rem;
+}
+
+#backButton {
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
