@@ -48,6 +48,7 @@ public class SecurityConfig {
 		.authorizeHttpRequests(auth -> auth
 				.requestMatchers("/api/users/register","/api/auth/**","/static/**","/js/**","/partials/**","/css/**","/indext.html","/","/favicon.ico","/images/**","/*.html").permitAll()
 				.requestMatchers("/api/users/**").hasAnyRole("USER")
+				.requestMatchers("/adminDashboard.html","/boardGameFormCreate.html","/boardGameFormEdit.html","/api/boardgames/create","/api/boardgames/delete/**","api/boardgames/update").hasAnyRole("ADMIN")
 		.anyRequest().authenticated())
 		.addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class);
 		return http.build();
