@@ -8,6 +8,15 @@ document.addEventListener("DOMContentLoaded", async () => {
         return;
     }
 
+    const payload = JSON.parse(atob(token.split('.')[1]));
+    const role = payload.role || null;
+    
+    if(role != "ADMIN"){
+		alert("No ADMIN detected");
+		window.location.href = "/home.html";
+		return;
+	}
+
     const enums = await fetchEnums(token);
     const game = await fetchGameById(gameId, token);
 
