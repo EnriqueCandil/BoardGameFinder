@@ -49,14 +49,19 @@ El proyecto está pensado para servir como una API REST y un frontend ligero, co
 
 ## ▶️ Cómo ejecutar el proyecto:
 
-```bash
+
 # 1. Clona este repositorio
+```bash
 git clone https://github.com/tuUsuario/BoardGameFinder.git  
+```
 
 # 2. Entra al directorio del proyecto
+```bash
 cd BoardGameFinder  
-
+```
 # 3. Configura la base de datos en application.properties  
 
 # 4. Lanza la aplicación
+```bash
 ./mvnw spring-boot:run 
+```
